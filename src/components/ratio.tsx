@@ -4,13 +4,13 @@ import { PropertiesBasic, PropertiesWrapper } from '../properties-interfaces';
 import Wrapper from './wrapper';
 
 interface PropertiesRatio {
-	x: number;
-	y: number;
+	w: number;
+	h: number;
 }
 
 const Root = styled.div(
-	({ x, y }: PropertiesRatio): CSSObject => ({
-		paddingBottom: `${100 / (x / y)}%`,
+	({ w, h }: PropertiesRatio): CSSObject => ({
+		paddingBottom: `${100 / (w / h)}%`,
 		position: 'relative',
 	})
 );
@@ -31,14 +31,14 @@ interface Properties
 		PropertiesWrapper {}
 
 export default function Container(properties: Properties): JSX.Element {
-	const { wrap, children, className, x, y } = properties;
+	const { wrap, children, className, w, h } = properties;
 
 	return (
 		<Root
 			{...{
 				className,
-				x,
-				y,
+				w,
+				h,
 			}}
 		>
 			<Body as={wrap}>{children}</Body>
