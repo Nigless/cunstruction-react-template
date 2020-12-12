@@ -1,9 +1,7 @@
 import { cloneElement, createElement, ReactElement } from 'react';
 import { PropertiesBasic } from '../properties-interfaces';
 
-export interface Properties extends PropertiesBasic {}
-
-export default function Wrapper(properties: Properties): JSX.Element {
+export default function Wrapper(properties: PropertiesBasic): JSX.Element {
 	const { className, children } = properties;
 
 	const elementProperties = { className };
