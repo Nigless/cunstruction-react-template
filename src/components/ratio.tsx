@@ -15,7 +15,7 @@ const Root = styled.div(
 	})
 );
 
-const Body = styled(Wrapper)({
+const Body = styled.div({
 	'&&': {
 		height: '100%',
 		left: 0,
@@ -41,7 +41,7 @@ export default function Ratio(properties: Properties): JSX.Element {
 				h,
 			}}
 		>
-			<Body as={wrap}>{children}</Body>
+			<Body as={wrap || Wrapper}>{children}</Body>
 		</Root>
 	);
 }
