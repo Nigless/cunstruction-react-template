@@ -23,7 +23,7 @@ const Root = styled.div(
 	})
 );
 
-export interface Properties
+interface Properties
 	extends PropertiesBasic,
 		PropertiesWrapper,
 		PropertiesFlex {}
