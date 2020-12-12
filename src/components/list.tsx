@@ -2,18 +2,14 @@ import React, { Children, createElement } from 'react';
 import { PropertiesBasic } from '../properties-interfaces';
 
 interface Properties extends PropertiesBasic {
-	ordered: boolean;
+	type?: 'a' | 'i' | '1' | 'A' | 'I';
 }
 
 export default function List(properties: Properties): JSX.Element {
-	const { children, className, ordered } = properties;
-
+	const { children, className, type } = properties;
 	return createElement(
-		ordered ? 'ol' : 'ul',
-		{ className },
+		type ? 'ol' : 'ul',
+		{ className, type },
 		Children.map(children, (child) => <li>{child}</li>)
 	);
 }
-List.defaultProps = {
-	ordered: false,
-};
