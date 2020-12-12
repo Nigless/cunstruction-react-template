@@ -30,7 +30,7 @@ interface Properties
 		PropertiesRatio,
 		PropertiesWrapper {}
 
-export default function Container(properties: Properties): JSX.Element {
+export default function Ratio(properties: Properties): JSX.Element {
 	const { wrap, children, className, w, h } = properties;
 
 	return (
