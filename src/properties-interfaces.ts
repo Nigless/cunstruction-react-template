@@ -1,21 +1,31 @@
 ﻿import { ReactNode } from 'react';
 
 interface PropertiesParent {
-	children?: ReactNode;
+	readonly children?: ReactNode;
 }
 
 interface PropertiesSlyled {
-	className?: string;
+	readonly className?: string;
 }
 
 interface PropertiesWrapper {
-	wrap?: string | React.ComponentType<any>;
+	readonly wrap?: string | React.ComponentType<any>;
+}
+
+interface PropertiesSwitchable {
+	readonly active?: boolean;
+}
+
+interface PropertiesDynamicCildren<Type> {
+	readonly children: (properties: Type) => JSX.Element;
 }
 
 interface PropertiesBasic extends PropertiesParent, PropertiesSlyled {}
 
 export type {
+	PropertiesSwitchable,
 	PropertiesParent,
+	PropertiesDynamicCildren,
 	PropertiesSlyled,
 	PropertiesBasic,
 	PropertiesWrapper,
