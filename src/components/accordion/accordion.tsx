@@ -2,16 +2,24 @@
 import { PropertiesBasic } from '../../properties-interfaces';
 import AccordionContent from './accordion-content';
 
-export default function Accordion(properties: PropertiesBasic): JSX.Element {
+interface Properties extends PropertiesBasic {
+	single?: boolean;
+}
+
+export default function Accordion(properties: Properties): JSX.Element {
+	const [state, setState] = useState(new Array<boolean>());
+	const { className, single } = properties;
+
 	const ClickHandler = (id: number) => {
-		state[id] = !state[id];
-		setState([...state]);
+		let tmpState = state;
+		if (single) {
+			tmpState = tmpState.map((elem, i) => (i === id ? !elem : false));
+		} else tmpState[id] = !tmpState[id];
+		setState([...tmpState]);
 	};
 
-	const [state, setState] = useState(new Array<boolean>());
 	let tmpState: boolean[] = state;
 	let { children } = properties;
-
 	let i: number = 0;
 
 	children = Children.map(children, (children: any) => {
@@ -33,8 +41,6 @@ export default function Accordion(properties: PropertiesBasic): JSX.Element {
 		return children;
 	});
 	if (tmpState !== state) setState(tmpState);
-
-	const { className } = properties;
 	return (
 		<div
 			{...{
