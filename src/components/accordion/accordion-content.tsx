@@ -1,10 +1,10 @@
 ﻿import React from 'react';
 import {
-	PropertiesDynamicCildren,
+	PropertiesDynamicChildren,
 	PropertiesSwitchable,
 } from '../../properties-interfaces';
 
-interface Properties extends PropertiesDynamicCildren<PropertiesSwitchable> {
+interface Properties extends PropertiesDynamicChildren<PropertiesSwitchable> {
 	header: (properties: {
 		active: boolean;
 		onClick: (event: any) => void;
