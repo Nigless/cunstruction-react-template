@@ -16,7 +16,7 @@ interface PropertiesSwitchable {
 	readonly active?: boolean;
 }
 
-interface PropertiesDynamicCildren<Type> {
+interface PropertiesDynamicChildren<Type> {
 	readonly children: (properties: Type) => JSX.Element;
 }
 
@@ -25,7 +25,7 @@ interface PropertiesBasic extends PropertiesParent, PropertiesStyled {}
 export type {
 	PropertiesSwitchable,
 	PropertiesParent,
-	PropertiesDynamicCildren,
+	PropertiesDynamicChildren,
 	PropertiesStyled,
 	PropertiesBasic,
 	PropertiesWrapper,
