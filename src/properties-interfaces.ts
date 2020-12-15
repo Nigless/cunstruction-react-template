@@ -4,7 +4,7 @@ interface PropertiesParent {
 	readonly children?: ReactNode;
 }
 
-interface PropertiesSlyled {
+interface PropertiesStyled {
 	readonly className?: string;
 }
 
@@ -20,13 +20,13 @@ interface PropertiesDynamicCildren<Type> {
 	readonly children: (properties: Type) => JSX.Element;
 }
 
-interface PropertiesBasic extends PropertiesParent, PropertiesSlyled {}
+interface PropertiesBasic extends PropertiesParent, PropertiesStyled {}
 
 export type {
 	PropertiesSwitchable,
 	PropertiesParent,
 	PropertiesDynamicCildren,
-	PropertiesSlyled,
+	PropertiesStyled,
 	PropertiesBasic,
 	PropertiesWrapper,
 };
