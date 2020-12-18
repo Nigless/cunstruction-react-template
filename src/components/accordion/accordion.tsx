@@ -10,7 +10,7 @@ export default function Accordion(properties: Properties): JSX.Element {
 	const [state, setState] = useState(new Array<boolean>());
 	const { className, single } = properties;
 
-	const ClickHandler = (id: number) => {
+	const clickHandler = (id: number) => {
 		let tmpState = state;
 		if (single) {
 			tmpState = tmpState.map((elem, i) => (i === id ? !elem : false));
@@ -32,7 +32,7 @@ export default function Accordion(properties: Properties): JSX.Element {
 				<>
 					<Header
 						active={tmpState[i++]}
-						onClick={ClickHandler.bind(this, i - 1)}
+						onClick={clickHandler.bind(this, i - 1)}
 					/>
 					<Content active={tmpState[i - 1]} />
 				</>
