@@ -4,8 +4,8 @@ import { PropertiesBasic, PropertiesWrapper } from '../properties-interfaces';
 import Wrapper from './wrapper';
 
 interface PropertiesWidth {
-	width: string | number;
-	maxWidth: string | number;
+	width?: string | number;
+	maxWidth?: string | number;
 }
 
 const Root = styled.div(({ width, maxWidth }: PropertiesWidth) => ({
