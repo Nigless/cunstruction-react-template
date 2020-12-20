@@ -7,8 +7,8 @@ import Link from '../../link';
 
 const Root = styled(Flex)({
 	height: 50,
-	'*+*': {
-		marginLeft: 5,
+	'&>*+*': {
+		marginLeft: 45,
 	},
 });
 
@@ -20,6 +20,9 @@ const SocialList = styled(List)({
 	padding: 0,
 	margin: 0,
 	listStyle: 'none',
+	'&>*+*': {
+		marginLeft: 25,
+	},
 });
 
 export default function Contacts({ className }: PropertiesStyled) {
