@@ -1,5 +1,16 @@
 ﻿import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 
-export default function App(): JSX.Element {
-	return <></>;
+const GlobalStyle = createGlobalStyle({
+	body: {
+		margin: 0,
+	},
+});
+
+export default function App() {
+	return (
+		<>
+			<GlobalStyle />
+		</>
+	);
 }
