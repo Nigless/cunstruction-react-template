@@ -6,13 +6,15 @@ import Contacts from './contacts';
 const Root = styled.div({
 	position: 'relative',
 });
-
+const Body = styled(Container)({
+	padding: '0 30px',
+});
 export default function Navigation() {
 	return (
 		<Root>
-			<Container maxWidth={1200}>
+			<Body maxWidth={1200}>
 				<Contacts />
-			</Container>
+			</Body>
 		</Root>
 	);
 }
