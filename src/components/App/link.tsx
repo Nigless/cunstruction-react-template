@@ -9,11 +9,20 @@ const Root = styled.a({
 
 interface Properties extends PropertiesBasic {
 	href: string;
+	ariaLabel?: string;
 }
 
-export default function App({ href, children, className }: Properties) {
+export default function App(properties: Properties) {
+	const { href, children, className, ariaLabel } = properties;
+
 	return (
-		<Root className={className} href={href}>
+		<Root
+			{...{
+				className,
+				href,
+				ariaLabel,
+			}}
+		>
 			{children}
 		</Root>
 	);
