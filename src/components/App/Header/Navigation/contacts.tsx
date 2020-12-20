@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { PropertiesStyled } from '../../../../properties-interfaces';
 import Flex from '../../../flex';
 import List from '../../../list';
+import Link from '../../link';
 
 const Root = styled(Flex)({
 	height: 50,
@@ -24,15 +25,15 @@ const SocialList = styled(List)({
 export default function Contacts({ className }: PropertiesStyled) {
 	return (
 		<Root align="center" className={className}>
-			<a href="tel:+">+(123) 1234-567-8901</a>
-			<a href="mailto:">info@domain.com</a>
+			<Link href="tel:+">+(123) 1234-567-8901</Link>
+			<Link href="mailto:">info@domain.com</Link>
 			<span>Mon - Sat 8:00 - 17:30, Sunday - CLOSED</span>
 			<RightBlock align="center" justify="flex-end">
 				<SocialList>
-					<a href="#">Twitter</a>
-					<a href="#">Facebook</a>
-					<a href="#">Linkedin</a>
-					<a href="#">Google+</a>
+					<Link href="#">Twitter</Link>
+					<Link href="#">Facebook</Link>
+					<Link href="#">Linkedin</Link>
+					<Link href="#">Google+</Link>
 				</SocialList>
 			</RightBlock>
 		</Root>
