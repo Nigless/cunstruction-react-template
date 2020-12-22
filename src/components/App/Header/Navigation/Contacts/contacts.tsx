@@ -39,6 +39,13 @@ const Link = styled.a({
 	textDecoration: 'none',
 });
 
+const SocialLink = styled(Link)({
+	transition: '0.3s',
+	'&:hover': {
+		color: 'orange',
+	},
+});
+
 export default function Contacts({ className }: PropertiesStyled) {
 	return (
 		<Root align="center" className={className}>
@@ -47,18 +54,18 @@ export default function Contacts({ className }: PropertiesStyled) {
 			<span>Mon - Sat 8:00 - 17:30, Sunday - CLOSED</span>
 			<RightBlock align="center" justify="flex-end">
 				<SocialList>
-					<Link aria-label="Twitter" href="#">
+					<SocialLink aria-label="Twitter" href="#">
 						<Icon as={IconTwitter} />
-					</Link>
-					<Link aria-label="Facebook" href="#">
+					</SocialLink>
+					<SocialLink aria-label="Facebook" href="#">
 						<Icon as={IconFacebook} />
-					</Link>
-					<Link aria-label="Linkedin" href="#">
+					</SocialLink>
+					<SocialLink aria-label="Linkedin" href="#">
 						<Icon as={IconLinkedin} />
-					</Link>
-					<Link aria-label="Telegram" href="#">
+					</SocialLink>
+					<SocialLink aria-label="Telegram" href="#">
 						<Icon as={IconTelegram} />
-					</Link>
+					</SocialLink>
 				</SocialList>
 			</RightBlock>
 		</Root>
