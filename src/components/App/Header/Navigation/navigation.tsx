@@ -6,6 +6,8 @@ import Menu from './Menu/menu';
 
 const Root = styled.div({
 	position: 'relative',
+	background: 'rgba(25,26,51,0.7)',
+	color: '#fff',
 });
 
 const Body = styled(Container)({
