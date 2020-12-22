@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { PropertiesStyled } from '../../../../../properties-interfaces';
 import Flex from '../../../../flex';
 import List from '../../../../list';
-import Link from '../../../link';
 import IconFacebook from './facebook.icon.svg';
 import IconLinkedin from './linkedin.icon.svg';
 import IconTelegram from './telegram.icon.svg';
@@ -33,6 +32,11 @@ const Icon = styled.svg({
 	height: '1em',
 	fill: 'currentcolor',
 	padding: 5,
+});
+
+const Link = styled.a({
+	color: 'inherit',
+	textDecoration: 'none',
 });
 
 export default function Contacts({ className }: PropertiesStyled) {
