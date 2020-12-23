@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import Flex from '../../../../flex';
 import list from '../../../../list';
+import Button from '../../../button';
 import logo from './logo.icon.svg';
 
 const Logo = styled(logo)({
@@ -44,6 +45,7 @@ export default function Menu() {
 					<Link href="#">Contact</Link>
 				</List>
 			</Flex>
+			<Button label="Contact now" color="primary" href="#" />
 		</Root>
 	);
 }
