@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import Flex from '../../../../flex';
 import list from '../../../../list';
-import Button from '../../../button';
+import button from '../../../button';
 import logo from './logo.icon.svg';
 
 const Logo = styled(logo)({
@@ -30,9 +30,13 @@ const List = styled(list)({
 	},
 });
 
+const Button = styled(button)({
+	marginLeft: 50,
+});
+
 export default function Menu() {
 	return (
-		<Root align="center">
+		<Root align="center" justify="space-between">
 			<Logo />
 			<Flex justify="flex-end">
 				<List>

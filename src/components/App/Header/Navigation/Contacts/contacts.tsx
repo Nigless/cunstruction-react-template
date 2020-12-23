@@ -40,9 +40,10 @@ const Link = styled.a({
 });
 
 const SocialLink = styled(Link)({
-	transition: '0.3s',
+	transitionDuration: '0.3s',
+	transitionProperty: 'color',
 	'&:hover': {
-		color: 'orange',
+		color: '#ff5f13',
 	},
 });
 
