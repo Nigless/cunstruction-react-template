@@ -36,7 +36,7 @@ const Button = styled(button)({
 
 export default function Menu() {
 	return (
-		<Root align="center" justify="space-between">
+		<Root align="center" justify="space-between" wrap="nav">
 			<Logo />
 			<Flex justify="flex-end">
 				<List>
