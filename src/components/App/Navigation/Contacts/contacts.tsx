@@ -1,8 +1,8 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
-import { PropertiesStyled } from '../../../../../properties-interfaces';
-import Flex from '../../../../flex';
-import List from '../../../../list';
+import { PropertiesStyled } from '../../../../properties-interfaces';
+import Flex from '../../../flex';
+import List from '../../../list';
 import IconFacebook from './facebook.icon.svg';
 import IconLinkedin from './linkedin.icon.svg';
 import IconTelegram from './telegram.icon.svg';

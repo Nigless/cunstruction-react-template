@@ -1,8 +1,8 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
-import Flex from '../../../../flex';
-import list from '../../../../list';
-import button from '../../../button';
+import Flex from '../../../flex';
+import list from '../../../list';
+import button from '../../button';
 import logo from './logo.icon.svg';
 
 const Logo = styled(logo)({
