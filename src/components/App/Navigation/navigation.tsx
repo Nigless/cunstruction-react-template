@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
-import Container from '../../../container';
+import Container from '../../container';
 import Contacts from './Contacts/contacts';
 import Menu from './Menu/menu';
 
