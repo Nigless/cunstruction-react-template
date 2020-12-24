@@ -26,7 +26,7 @@ const Hr = styled.hr({
 export default function Navigation() {
 	return (
 		<Root>
-			<Body maxWidth={1200}>
+			<Body maxWidth={1600}>
 				<Contacts />
 				<Hr />
 				<Menu />
