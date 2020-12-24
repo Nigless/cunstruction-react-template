@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
+import { PropertiesStyled } from '../../../properties-interfaces';
 import Container from '../../container';
 import Contacts from './Contacts/contacts';
 import Menu from './Menu/menu';
@@ -23,9 +24,10 @@ const Hr = styled.hr({
 	borderBottom: 0,
 });
 
-export default function Navigation() {
+export default function Navigation(properties: PropertiesStyled) {
+	const { className } = properties;
 	return (
-		<Root>
+		<Root className={className}>
 			<Body maxWidth={1600}>
 				<Contacts />
 				<Hr />
