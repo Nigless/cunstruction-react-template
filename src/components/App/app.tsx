@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle({
 	body: {
 		margin: 0,
 		fontSize: 14,
+		fontFamily: 'Roboto',
 	},
 });
 
