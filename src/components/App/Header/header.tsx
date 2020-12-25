@@ -13,6 +13,7 @@ const H1 = styled.h1({
 	textTransform: 'uppercase',
 	fontSize: '8em',
 	color: '#ff5f13',
+	fontWeight: 900,
 });
 
 const Title2 = styled.div({
