@@ -20,7 +20,7 @@ const Hr = styled.hr({
 	left: 0,
 	right: 0,
 	margin: 0,
-	border: 'solid 1px #000',
+	border: 'solid 1px #3e4160',
 	borderBottom: 0,
 });
 
