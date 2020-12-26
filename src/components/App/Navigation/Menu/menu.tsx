@@ -31,6 +31,8 @@ const List = styled(list)({
 });
 
 const Button = styled(button)({
+	textTransform: 'uppercase',
+	letterSpacing: 1,
 	marginLeft: 50,
 });
 
