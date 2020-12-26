@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
+import Content from './Content/content';
 import Header from './Header/header';
 import navigation from './Navigation/navigation';
 
@@ -23,6 +24,7 @@ export default function App() {
 			<GlobalStyle />
 			<Navigation />
 			<Header />
+			<Content />
 		</>
 	);
 }
