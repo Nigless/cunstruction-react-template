@@ -7,7 +7,7 @@ import heading from './heading';
 import image from './servicess1.png';
 
 const Article = styled(article)({
-	flexGrow: 1,
+	flex: 1,
 	'&+&': {
 		marginLeft: 30,
 	},
