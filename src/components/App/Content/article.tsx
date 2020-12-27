@@ -5,6 +5,7 @@ import Flex from '../../flex';
 import Ratio from '../../ratio';
 
 const Root = styled.article({
+	position: 'relative',
 	'&:after': {
 		content: '""',
 		display: 'block',
@@ -12,12 +13,15 @@ const Root = styled.article({
 		backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath stroke='rgba(0,0,0,0.2)' stroke-linecap='square' stroke-width='.3' d='M1 0L0 1m3-1L0 3m5-3L0 5m7-5L0 7m9-7L0 9m10-8l-9 9m9-7l-7 7m7-5l-5 5m5-3l-3 3m3-1l-1 1'/%3E%3C/svg%3E");`,
 		backgroundSize: 35,
 		borderBottom: 'solid 2px #ff5f13',
+		width: '100%',
+		position: 'absolute',
+		bottom: 0,
 	},
 });
 
 const Body = styled.div({
 	padding: '20px 30px',
-	paddingBottom: 58,
+	paddingBottom: 78,
 });
 
 const Heading = styled.h3({
@@ -30,6 +34,7 @@ const Button = styled.a({
 	color: 'inherit',
 	textDecoration: 'none',
 	position: 'absolute',
+	bottom: 40,
 	'&:after': {
 		content: '""',
 		fontSize: 30,
