@@ -4,13 +4,13 @@ import { PropertiesStyled } from '../../properties-interfaces';
 import Flex from '../flex';
 
 const Root = styled.button(
-	({ shape, color }: { shape?: 'box'; color?: 'primary' }): CSSObject => {
+	({ shape, color }: { shape?: 'box'; color?: 'main' }): CSSObject => {
 		let colorStyles: CSSObject = {
 			color: '#000',
 			background: '#eee',
 		};
 
-		if (color === 'primary')
+		if (color === 'main')
 			colorStyles = {
 				...colorStyles,
 				color: '#fff',
@@ -80,7 +80,7 @@ interface Properties extends PropertiesStyled {
 	label: string;
 	href?: string;
 	shape?: 'box';
-	color?: 'primary';
+	color?: 'main';
 }
 
 export default function Menu({
