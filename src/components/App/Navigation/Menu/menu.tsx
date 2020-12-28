@@ -51,7 +51,7 @@ export default function Menu() {
 					<Link href="#">Contact</Link>
 				</List>
 			</Flex>
-			<Button label="Contact now" color="primary" href="#" />
+			<Button label="Contact now" color="main" href="#" />
 		</Root>
 	);
 }
