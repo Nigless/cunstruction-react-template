@@ -12,7 +12,10 @@ const Root = styled.div({
 });
 
 const Body = styled(Container)({
-	padding: '0 30px',
+	padding: '0 100px',
+	'@media only screen and (max-width: 1200px)': {
+		padding: '0 30px',
+	},
 });
 
 const Hr = styled.hr({
