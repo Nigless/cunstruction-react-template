@@ -1,8 +1,8 @@
 ﻿import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { PropertiesStyled } from '../../../properties-interfaces';
-import Flex from '../../flex';
-import Ratio from '../../ratio';
+import { PropertiesStyled } from '../../../../properties-interfaces';
+import Flex from '../../../flex';
+import Ratio from '../../../ratio';
 
 const Root = styled.article({
 	position: 'relative',
