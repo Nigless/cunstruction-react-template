@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import styled from 'styled-components';
+import { PropertiesStyled } from '../../../../properties-interfaces';
 import Flex from '../../../flex';
 import article from './article';
 import heading from './heading';
@@ -17,9 +18,10 @@ const Article = styled(article)({
 	},
 });
 
-export default function Section1() {
+export default function Section1(props: PropertiesStyled) {
+	const { className } = props;
 	return (
-		<section>
+		<section className={className}>
 			<Heading as="h2">OUR SERVICES</Heading>
 			<Flex>
 				<Article image={<img src={image} />} label="Heading" />
